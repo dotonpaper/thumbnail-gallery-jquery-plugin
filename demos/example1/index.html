@@ -1,0 +1,305 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        <title>Thumbnail Gallery (jQuery Plugin)</title>
+        
+        <link rel="shortcut icon" href="assets/gui/images/dop-icon.png" />
+
+        <link rel="stylesheet" type="text/css" href="assets/gui/css/style.css" />
+        
+        <link rel="stylesheet" type="text/css" href="../../doptg/assets/gui/css/jquery.jscrollpane.css" />
+        <link rel="stylesheet" type="text/css" href="../../doptg/assets/gui/css/jquery.dop.ThumbnailGallery.css" />
+        
+        <script type="text/JavaScript" src="http://code.jquery.com/jquery-latest.js"></script>
+        <script type="text/JavaScript" src="../../doptg/assets/js/jquery.mousewheel.js"></script>
+        <script type="text/JavaScript" src="../../doptg/assets/js/jquery.jscrollpane.min.js"></script>
+        <script type="text/JavaScript" src="../../doptg/assets/js/jquery.dop.ThumbnailGallery.js"></script>
+
+        <script type="text/JavaScript">
+            $(document).ready(function(){
+                $('#galleryContainer').DOPThumbnailGallery({'ID': 1, 'SettingsDataType': 'HTML', 'ContentDataType': 'HTML'});
+            });
+        </script>  
+    </head>
+    <body>
+        <div id="wrapper">
+            <div id="header">
+                <h1 id="site-title">
+                    <a href="" title="Thumbnail Gallery (jQuery Plugin)">Thumbnail Gallery (jQuery Plugin)</a>
+                </h1>
+                <div id="works"><img src="assets/gui/images/works.png" alt="" /></div>
+            </div>
+            
+            <div id="main">
+		<div id="container">
+                    <div id="content">
+                        <div class="entry-content">
+                            <div id="galleryContainer">
+                                <ul class="Settings" style="display:none;">
+                                    <li class="Width">900</li>
+                                    <li class="Height">600</li>        
+                                    <li class="BgColor">f1f1f1</li>
+                                    <li class="BgAlpha">100</li>
+                                    <li class="ImagesOrder">normal</li>
+                                    <li class="ResponsiveEnabled">true</li>
+                                    <li class="ThumbnailsPosition">bottom</li>
+                                    <li class="ThumbnailsOverImage">false</li>
+                                    <li class="ThumbnailsBgColor">f1f1f1</li>
+                                    <li class="ThumbnailsBgAlpha">100</li>
+                                    <li class="ThumbnailsSpacing">5</li>
+                                    <li class="ThumbnailsPaddingTop">0</li>
+                                    <li class="ThumbnailsPaddingRight">5</li>
+                                    <li class="ThumbnailsPaddingBottom">5</li>
+                                    <li class="ThumbnailsPaddingLeft">5</li>
+                                    <li class="ThumbnailsNavigation">mouse</li>
+                                    <li class="ThumbnailsNavigationPrev">doptg/assets/gui/images/ThumbnailsPrev.png</li>
+                                    <li class="ThumbnailsNavigationPrevHover">doptg/assets/gui/images/ThumbnailsPrevHover.png</li>
+                                    <li class="ThumbnailsNavigationNext">doptg/assets/gui/images/ThumbnailsNext.png</li>
+                                    <li class="ThumbnailsNavigationNextHover">doptg/assets/gui/images/ThumbnailsNextHover.png</li>
+                                    <li class="ThumbnailLoader">doptg/assets/gui/images/ThumbnailLoader.gif</li>
+                                    <li class="ThumbnailWidth">60</li>
+                                    <li class="ThumbnailHeight">60</li>
+                                    <li class="ThumbnailWidthMobile">60</li>
+                                    <li class="ThumbnailHeightMobile">60</li>
+                                    <li class="ThumbnailAlpha">50</li>
+                                    <li class="ThumbnailAlphaHover">100</li>
+                                    <li class="ThumbnailAlphaSelected">100</li>
+                                    <li class="ThumbnailBgColor">f1f1f1</li>
+                                    <li class="ThumbnailBgColorHover">000000</li>
+                                    <li class="ThumbnailBgColorSelected">000000</li>
+                                    <li class="ThumbnailBorderSize">2</li>
+                                    <li class="ThumbnailBorderColor">f1f1f1</li>
+                                    <li class="ThumbnailBorderColorHover">000000</li>
+                                    <li class="ThumbnailBorderColorSelected">000000</li>
+                                    <li class="ThumbnailPaddingTop">0</li>
+                                    <li class="ThumbnailPaddingRight">0</li>
+                                    <li class="ThumbnailPaddingBottom">0</li>
+                                    <li class="ThumbnailPaddingLeft">0</li>
+                                    <li class="ImageLoader">doptg/assets/gui/images/ImageLoader.gif</li>
+                                    <li class="ImageBgColor">afafaf</li>
+                                    <li class="ImageBgAlpha">100</li>
+                                    <li class="ImageDisplayType">fit</li>
+                                    <li class="ImageDisplayTime">1000</li>
+                                    <li class="ImageMarginTop">20</li>
+                                    <li class="ImageMarginRight">20</li>
+                                    <li class="ImageMarginBottom">20</li>
+                                    <li class="ImageMarginLeft">20</li>
+                                    <li class="ImagePaddingTop">5</li>
+                                    <li class="ImagePaddingRight">5</li>
+                                    <li class="ImagePaddingBottom">5</li>        
+                                    <li class="ImagePaddingLeft">5</li>
+                                    <li class="NavigationEnabled">true</li>
+                                    <li class="NavigationOverImage">true</li>
+                                    <li class="NavigationPrev">doptg/assets/gui/images/Prev.png</li>
+                                    <li class="NavigationPrevHover">doptg/assets/gui/images/PrevHover.png</li>
+                                    <li class="NavigationNext">doptg/assets/gui/images/Next.png</li>
+                                    <li class="NavigationNextHover">doptg/assets/gui/images/NextHover.png</li>
+                                    <li class="NavigationLightbox">doptg/assets/gui/images/Lightbox.png</li>
+                                    <li class="NavigationLightboxHover">doptg/assets/gui/images/LightboxHover.png</li>
+                                    <li class="NavigationTouchDeviceSwipeEnabled">true</li>
+                                    <li class="CaptionWidth">900</li>
+                                    <li class="CaptionHeight">70</li>
+                                    <li class="CaptionTitleColor">000000</li>
+                                    <li class="CaptionTextColor">000000</li>
+                                    <li class="CaptionBgColor">ffffff</li>
+                                    <li class="CaptionBgAlpha">50</li>
+                                    <li class="CaptionPosition">bottom</li>
+                                    <li class="CaptionOverImage">true</li>
+                                    <li class="CaptionScrollScrubColor">777777</li>
+                                    <li class="CaptionScrollBgColor">e0e0e0</li>
+                                    <li class="CaptionMarginTop">0</li>
+                                    <li class="CaptionMarginRight">0</li>
+                                    <li class="CaptionMarginBottom">0</li>
+                                    <li class="CaptionMarginLeft">0</li>
+                                    <li class="CaptionPaddingTop">10</li>
+                                    <li class="CaptionPaddingRight">10</li>
+                                    <li class="CaptionPaddingBottom">10</li>
+                                    <li class="CaptionPaddingLeft">10</li>
+                                    <li class="LightboxEnabled">true</li>
+                                    <li class="LightboxWindowColor">000000</li>
+                                    <li class="LightboxWindowAlpha">80</li>
+                                    <li class="LightboxLoader">doptg/assets/gui/images/LightboxLoader.gif</li>
+                                    <li class="LightboxBgColor">000000</li>
+                                    <li class="LightboxBgAlpha">100</li>
+                                    <li class="LightboxMarginTop">70</li>
+                                    <li class="LightboxMarginRight">70</li>
+                                    <li class="LightboxMarginBottom">70</li>
+                                    <li class="LightboxMarginLeft">70</li>
+                                    <li class="LightboxPaddingTop">10</li>
+                                    <li class="LightboxPaddingRight">10</li>
+                                    <li class="LightboxPaddingBottom">10</li>
+                                    <li class="LightboxPaddingLeft">10</li>
+                                    <li class="LightboxNavigationPrev">doptg/assets/gui/images/LightboxPrev.png</li>
+                                    <li class="LightboxNavigationPrevHover">doptg/assets/gui/images/LightboxPrevHover.png</li>
+                                    <li class="LightboxNavigationNext">doptg/assets/gui/images/LightboxNext.png</li>
+                                    <li class="LightboxNavigationNextHover">doptg/assets/gui/images/LightboxNextHover.png</li>
+                                    <li class="LightboxNavigationClose">doptg/assets/gui/images/LightboxClose.png</li>
+                                    <li class="LightboxNavigationCloseHover">doptg/assets/gui/images/LightboxCloseHover.png</li>
+                                    <li class="LightboxNavigationInfoBgColor">000000</li>
+                                    <li class="LightboxNavigationInfoTextColor">dddddd</li>
+                                    <li class="LightboxNavigationTouchDeviceSwipeEnabled">true</li>
+                                    <li class="SocialShareEnabled">true</li>
+                                    <li class="SocialShare">doptg/assets/gui/images/SocialShare.png</li>
+                                    <li class="SocialShareLightbox">doptg/assets/gui/images/SocialShareLightbox.png</li>
+                                    <li class="TooltipEnabled">false</li>
+                                    <li class="TooltipBgColor">ffffff</li>
+                                    <li class="TooltipStrokeColor">000000</li>
+                                    <li class="TooltipTextColor">000000</li>
+                                    <li class="Slideshow">false</li>
+                                    <li class="SlideshowTime">5000</li>
+                                    <li class="SlideshowAutostart">true</li>
+                                    <li class="SlideshowLoop">true</li>
+                                    <li class="SlideshowPlay">doptg/assets/gui/images/Play.png</li>
+                                    <li class="SlideshowPlayHover">doptg/assets/gui/images/PlayHover.png</li>
+                                    <li class="SlideshowPause">doptg/assets/gui/images/Pause.png</li>
+                                    <li class="SlideshowPauseHover">doptg/assets/gui/images/PauseHover.png</li>
+                                    <li class="AutoHide">false</li>
+                                    <li class="AutoHideTime">2000</li>
+                                </ul>
+                                <ul class="Content" style="display:none;">
+                                    <li>
+                                        <img class="Image" src="assets/images/image01.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image01.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image02.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image02.jpg" alt="" title="" />
+                                        <span class="CaptionTitle">Item with caption</span>
+                                        <span class="CaptionText">Phasellus sed risus diam. Duis facilisis ante in nulla commodo tempus. Aliquam eu arcu vel purus mollis rutrum. Proin iaculis, augue eu iaculis convallis, erat ipsum volutpat purus, nec dignissim lorem purus in sapien. Etiam dictum vulputate imperdiet. Donec porttitor luctus ipsum, quis tempor sapien iaculis vitae. Sed in mi ac elit fringilla lobortis. Nulla blandit justo eu sem eleifend rutrum. Sed a urna libero, non pharetra dui. In accumsan consequat arcu eu vehicula. Vestibulum vitae justo vel nibh tristique mattis at eget lacus.</span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image03.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image03.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"><iframe src="http://player.vimeo.com/video/6755431?title=0&abyline=0&portrait=0&color=c9c9c9" width="700" height="394" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image04.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image04.jpg" alt="" title="" />
+                                        <span class="CaptionTitle">Media</span>
+                                        <span class="CaptionText">Media is displayed in lightbox</span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"><iframe width="853" height="480" src="http://www.youtube.com/embed/dYK_Gqyf48Y" frameborder="0" allowfullscreen></iframe></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image05.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image05.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"><div style="width: 800px; height: 400px;"><div style="color:#000000; font-family:Helvetica; font-size:32px; line-height:1em; margin-top:184px;  text-align:center;">Add your HTML code here.</div></div></span>
+                                        <span class="LightboxMedia"><div style="width: 1200px; height: 550px;"><div style="color:#ffffff; font-family:Helvetica; font-size:36px; line-height:1em; margin-top:257px;  text-align:center;">Add your HTML code here.</div></div></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image06.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image06.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image07.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image07.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span></li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image08.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image08.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image09.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image09.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image10.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image10.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image11.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image11.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image12.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image12.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image13.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image13.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image14.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image14.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                    <li>
+                                        <img class="Image" src="assets/images/image15.jpg" alt="" title="" />
+                                        <img class="Thumb" src="assets/images/thumbs/image15.jpg" alt="" title="" />
+                                        <span class="CaptionTitle"></span>
+                                        <span class="CaptionText"></span>
+                                        <span class="Media"></span>
+                                        <span class="LightboxMedia"></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                A very customizable jQuery Plugin Thumbnail Gallery, that can be edited from a JSON or XML file. The gallery is completely resizable and is compatible with all browsers and devices (iPhone, iPad and Android smartphones).
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div id="footer">
+                <div id="w3c-valid">
+                    <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-xhtml10" alt="Valid XHTML 1.0 Transitional" /></a>
+                </div>		
+                <div id="colophon">
+                    <div id="site-info">
+                        <a href="http://dopdemo.net/jquery/thumbnail-gallery/" title="Thumbnail Gallery (jQuery Plugin)">Thumbnail Gallery (jQuery Plugin)</a>
+                    </div>
+                    <div id="site-generator">
+                        Powered by <a href="http://www.dopdemo.net" title="DOP Demo" style="background:none;">DOP Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
